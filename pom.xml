@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.syntax</groupId>
-    <artifactId>HRMSB16</artifactId>
+    <artifactId>GroupProjectB16</artifactId>
     <version>1.0-SNAPSHOT</version>
     <!-- java from 11 to 8-->
     <properties>
@@ -91,7 +91,7 @@
                         </goals>
                         <configuration>
                             <!-- here we type the project name HRMSB16 -->
-                            <projectName>Group13B16</projectName>
+                            <projectName>GroupProjectB16</projectName>
                             <!-- output directory for the generated report -->
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <!-- optional, defaults to outputDirectory if not specified -->
