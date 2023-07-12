@@ -10,5 +10,9 @@
         <module name="GroupProjectB16" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="GroupProjectB16." target="1.8" />
+      <module name="HRMSB16" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
