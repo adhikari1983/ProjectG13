@@ -7,13 +7,14 @@
     <groupId>org.syntax</groupId>
     <artifactId>GroupProjectB16</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <!-- java from 11 to 8-->
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -49,20 +50,21 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.2</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
         </dependency>
-        <!--for log4j https://mvnrepository.com/artifact/log4j/log4j  -->
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+
     </dependencies>
-    <!-- for json report we have to add this plugin-->
     <build>
         <plugins>
             <plugin>
@@ -71,13 +73,10 @@
                 <version>3.1.2</version>
                 <configuration>
                     <includes>
-                        <!-- * star means any package and we add the class that we need to run -->
-                        <!-- we can add as many as class here that we need to run -->
                         <include>**/*RunnerClass</include>
                     </includes>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -90,7 +89,6 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <!-- here we type the project name HRMSB16 -->
                             <projectName>GroupProjectB16</projectName>
                             <!-- output directory for the generated report -->
                             <outputDirectory>${project.build.directory}</outputDirectory>
