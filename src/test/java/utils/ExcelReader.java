@@ -16,17 +16,12 @@ public class ExcelReader {
         List<Map<String,String>> excelData = new ArrayList<>();
         try {
             fileInputStream = new FileInputStream(path);
-            // that special call which knows how to read the data from excel files
             XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
             Sheet sheet = xssfWorkbook.getSheet(sheetName);
-            //this row is just for keys
             Row headerRow = sheet.getRow(0);
-            //for row, we take 1 index because 0 is already used for headers
             for (int rows = 1; rows < sheet.getPhysicalNumberOfRows(); rows++) {
-                //this row is for values
                 Row row = sheet.getRow(rows);
                 Map<String, String> rowMap = new LinkedHashMap<>();
-                //here, we are taking all the columns
                 for (int col = 0; col < row.getPhysicalNumberOfCells(); col++) {
                     String key = headerRow.getCell(col).toString();
                     String value = row.getCell(col).toString();
