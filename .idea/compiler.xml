@@ -6,8 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Group13B16" />
         <module name="GroupProjectB16" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="GroupProjectB16." target="1.8" />
+      <module name="HRMSB16" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
