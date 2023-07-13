@@ -1,6 +1,6 @@
 package steps;
 
-import Utils.CommonMethods;
+import utils.CommonMethods;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
