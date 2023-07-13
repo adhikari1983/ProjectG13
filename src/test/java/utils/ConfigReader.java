@@ -1,4 +1,4 @@
-package Utilis;
+package Utils;
 
 
 // this class to read the data from the config-properties

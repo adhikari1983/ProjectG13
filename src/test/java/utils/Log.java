@@ -1,14 +1,9 @@
-package Utilis;
+package Utils;
 import org.apache.log4j.Logger;
 
 // we need to add the dependency to pom .xml
 // also we need to add the file log4j.xml to target package and add the code
 public class Log {
-
-
-
-
-
 
     // Initialize Log4j logs
 
