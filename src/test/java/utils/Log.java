@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 import org.apache.log4j.Logger;
 
 // we need to add the dependency to pom .xml
