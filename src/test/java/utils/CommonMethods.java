@@ -1,4 +1,5 @@
-package Utils;
+package utils;
+
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -24,12 +25,8 @@ public class CommonMethods {
 
     public static void openBrowserAndNavigateToURL() {
 
-        //the path is coming from the constants
         ConfigReader.readProperties(Constants.CONFIG_READER_PATH);
 
-
-
-        //read the value of the property "url" from the config file
         switch (ConfigReader.getPropertyValue("browser")) {
             case "chrome":
                 driver = new ChromeDriver();
@@ -44,11 +41,8 @@ public class CommonMethods {
         driver.manage().window().maximize();
         driver.get(ConfigReader.getPropertyValue("url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        // this method is going to initialize all the objects
         initializePageObjects();
     }
-
-    //close the browser
     public static void closeBrowser() {
         if (driver != null) {
             driver.quit();

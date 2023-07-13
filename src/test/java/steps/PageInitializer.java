@@ -1,10 +1,11 @@
 package steps;
 
-import Utils.CommonMethods;
+
 import pages.AddEmployeePage;
 import pages.DashboardPage;
 import pages.EmployeeSearchPage;
 import pages.LoginPage;
+import utils.CommonMethods;
 
 public class PageInitializer extends CommonMethods {
     public static LoginPage loginPage;
