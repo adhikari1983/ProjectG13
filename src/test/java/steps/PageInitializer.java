@@ -1,6 +1,6 @@
 package steps;
 
-
+import utils.CommonMethods;
 import pages.AddEmployeePage;
 import pages.DashboardPage;
 import pages.EmployeeSearchPage;
