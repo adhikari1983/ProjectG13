@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         //prints all the steps in console, generates report & provides the failed test path
         plugin = {"pretty",
                 "html:target/cucumber.html",
-                "json:target/cucumber.jason",
+                "json:target/cucumber.json",
                 "rerun:target/failed.txt"}
 )
 public class RunnerClass {
