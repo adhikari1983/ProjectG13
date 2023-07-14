@@ -11,16 +11,13 @@ import org.junit.runner.RunWith;
         //glue keyword we use-to provide the path of the package where all the step defs are available
         glue = {"steps"},
         //executes the step defs
-        dryRun = true,
+        dryRun = false,
         //executes the test case of our tag selection
-        tags = "@login",
+        tags = "@terminate",
         //to avoid irrelevant information from the console for simple output
         monochrome = true,
         //prints all the steps in console, generates report & provides the failed test path
-        plugin = {"pretty",
-                "html:target/cucumber.html",
-                "json:target/cucumber.jason",
-                "return:target/failed.txt"}
+        plugin = {"pretty"}
 )
 public class RunnerClass {
 }
