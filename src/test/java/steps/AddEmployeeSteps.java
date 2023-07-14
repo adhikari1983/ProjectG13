@@ -3,6 +3,8 @@ package steps;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.CommonMethods;
+import java.util.Map;
+import java.util.List;
 
 import static steps.PageInitializer.addEmployeePage;
 import static steps.PageInitializer.dashboardPage;
@@ -36,5 +38,33 @@ public class AddEmployeeSteps extends CommonMethods {
     @Then("employee was added successfully")
     public void employee_was_added_successfully() {
         System.out.println("Employee was added successfully");
+    }
+    @When("user enters firstName and middleName and lastName and employeeID")
+    public void user_enters_first_name_and_middle_name_and_last_name_and_employee_id
+            (io.cucumber.datatable.DataTable dataTable){
+
+        List<Map<String, String>> employeeNames=dataTable.asMaps();
+        for (Map<String, String> employee:employeeNames){
+            //to get the value
+            String firstNameValue=employee.get("firstName");
+            String middleNameValue=employee.get("middleName");
+            String lastNameValue= employee.get("lastName");
+            String employeeIDValue=employee.get("employeeID");
+
+           //to fill the fields
+            sendText(firstNameValue,addEmployeePage.firstNameField);
+            sendText(middleNameValue,addEmployeePage.middleNameField);
+            sendText(lastNameValue,addEmployeePage.lastNameField);
+            sendText(employeeIDValue,addEmployeePage.employeeIdField);
+            click(addEmployeePage.saveButton);
+
+            click(dashboardPage.addEmployeeButton);
+
+        }
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
