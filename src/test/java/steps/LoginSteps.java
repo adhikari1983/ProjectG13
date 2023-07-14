@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.CommonMethods;
+import utils.ConfigReader;
 
 import static steps.PageInitializer.loginPage;
 
@@ -22,8 +23,8 @@ public class LoginSteps extends CommonMethods {
     @When("user enter valid admin credentials")
     public void user_enter_valid_admin_credentials() {
 
-        sendText("admin123", loginPage.usernameField);
-        sendText("Hum@nhrm123", loginPage.passwordField);
+        sendText(ConfigReader.getPropertyValue("username"),loginPage.usernameField);
+        sendText(ConfigReader.getPropertyValue("password"), loginPage.passwordField);
     }
 
     @When("user click the login button")
@@ -35,7 +36,7 @@ public class LoginSteps extends CommonMethods {
     @Then("user should be successfully logged in")
     public void user_should_be_successfully_logged_in() {
 
-        WebElement welcomeAdmin = driver.findElement(By.xpath("//*[@id=\"welcome\"]"));
+        WebElement welcomeAdmin = driver.findElement(By.xpath("//*[@id='welcome']"));
         boolean isDisplayed = welcomeAdmin.isDisplayed();
         Assert.assertTrue("User should be successfully logged in", isDisplayed);
 
