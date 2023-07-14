@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.PageInitializer;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,9 +18,9 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-import static steps.PageInitializer.initializePageObjects;
 
-public class CommonMethods {
+
+public class CommonMethods extends PageInitializer {
     public static WebDriver driver;
 
     public static void openBrowserAndNavigateToURL() {

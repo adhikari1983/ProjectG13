@@ -15,7 +15,7 @@ public class Hooks extends CommonMethods {
 
     @After
     //Scenario scenario -> holds the complete info of the test execution
-    public void end(Scenario scenario){
+   public void end(Scenario scenario){
         //we need this variable because my ss method returns array of byte
         byte[] pic;
         //here we are going to capture the screenshot and attaching it to the report
