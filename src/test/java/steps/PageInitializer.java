@@ -4,12 +4,13 @@ import pages.*;
 import utils.CommonMethods;
 import utils.CommonMethods;
 
-public class PageInitializer extends CommonMethods {
+public class PageInitializer  {
     public static LoginPage loginPage;
     public static DashboardPage dashboardPage;
     public static AddEmployeePage addEmployeePage;
     public static EmployeeSearchPage employeeSearchPage;
     public static AddMembershipPage addMembershipPage;
+
 
     public static void initializePageObjects() {
         loginPage = new LoginPage();
