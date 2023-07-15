@@ -2,18 +2,11 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.math3.analysis.function.Add;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-
-import pages.AddMembershipPage;
 import utils.CommonMethods;
 import utils.ConfigReader;
 
 import java.time.Duration;
-
-import static steps.PageInitializer.*;
-
 public class AddMembershipSteps extends CommonMethods {
     @When("Admin enters valid admin username and password")
     public void admin_enters_valid_admin_username_and_password() {
@@ -56,3 +49,4 @@ public class AddMembershipSteps extends CommonMethods {
     }
 
 }
+
