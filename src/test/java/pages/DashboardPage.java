@@ -28,6 +28,10 @@ public class DashboardPage extends CommonMethods {
     public WebElement languageName;
     @FindBy(name="btnSave")
     public WebElement saveBtn;
+    @FindBy(xpath = "//a[text()='Welcome Admin']")
+    public WebElement WelcomeMsg;
+    @FindBy(id="menu_admin_viewAdminModule")
+    public WebElement viewAdminOption;
 
 
     public DashboardPage(){
