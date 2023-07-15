@@ -4,11 +4,12 @@ import pages.*;
 import utils.CommonMethods;
 import utils.CommonMethods;
 
-public class PageInitializer  {
+public class PageInitializer {
     public static LoginPage loginPage;
     public static DashboardPage dashboardPage;
     public static AddEmployeePage addEmployeePage;
     public static EmployeeSearchPage employeeSearchPage;
+    public static AddPersonalDetails addPersonalDetails;
     public static AddMembershipPage addMembershipPage;
 
 
@@ -17,6 +18,7 @@ public class PageInitializer  {
         dashboardPage = new DashboardPage();
         addEmployeePage = new AddEmployeePage();
         employeeSearchPage = new EmployeeSearchPage();
+        addPersonalDetails = new AddPersonalDetails();
         addMembershipPage=new AddMembershipPage();
     }
 }
