@@ -7,7 +7,6 @@ import utils.CommonMethods;
 import utils.ConfigReader;
 
 import java.time.Duration;
-
 public class AddMembershipSteps extends CommonMethods {
     @When("Admin enters valid admin username and password")
     public void admin_enters_valid_admin_username_and_password() {
@@ -50,3 +49,4 @@ public class AddMembershipSteps extends CommonMethods {
     }
 
 }
+
