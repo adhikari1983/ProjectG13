@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         //in failed Runner just 2 things are required features and glue
         features ="@target/failed.txt",
         //glue keyword we use to provide the path of the package where step defs are available
-        glue ="steps",
+        glue ="Steps",
         //dryRun-true it stops actual execution, it quickly scans all the steps and will
         // dryRun = false,//false will execute no need of this line the failed runner
         //we can assign any name like "@sprint14", of your choice , even two tags , 3, 4

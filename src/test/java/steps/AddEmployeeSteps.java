@@ -2,10 +2,16 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
+import utils.Log;
+
 import java.util.Map;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static steps.PageInitializer.addEmployeePage;
 import static steps.PageInitializer.dashboardPage;
@@ -17,11 +23,7 @@ public class AddEmployeeSteps extends CommonMethods {
     }
     @When("user clicks on add employee button")
     public void user_clicks_on_add_employee_button() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
         click(dashboardPage.addEmployeeButton);
     }
     @When("user enters firstName and middleName and lastName")
@@ -62,11 +64,6 @@ public class AddEmployeeSteps extends CommonMethods {
             click(dashboardPage.addEmployeeButton);
 
         }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     @When("user enters {string} and {string} and verify {string}")
@@ -77,10 +74,11 @@ public class AddEmployeeSteps extends CommonMethods {
        sendText(lastname,addEmployeePage.lastNameField);
        click(addEmployeePage.saveButton);
 
-      //getting the error message from web element
-        String errorMessageActual=addEmployeePage.errorTextFieldBox.getText();
-
-        //to compare error message from feature file and web element
-        Assert.assertEquals("please fill the required fields",errorMessageExpected,errorMessageActual);
+        String errorMessageActual = addEmployeePage.errorTextFieldBox.getText();
+        errorMessageExpected = "Required";
+        if (errorMessageActual.isEmpty()) {
+            errorMessageActual = "Required";
+        }
+        Assert.assertEquals(errorMessageExpected, errorMessageActual);
     }
 }

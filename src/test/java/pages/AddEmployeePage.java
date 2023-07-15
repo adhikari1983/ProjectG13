@@ -37,7 +37,7 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(id="re_password")
     public WebElement confirmPasswordBox;
 
-    @FindBy(xpath="//span[text()='Required']")
+    @FindBy(xpath="//span[@for='firstName']/following::span[@for='lastName']")
     public WebElement errorTextFieldBox;
 
     public AddEmployeePage(){

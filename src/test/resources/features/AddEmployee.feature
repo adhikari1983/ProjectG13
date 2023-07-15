@@ -6,16 +6,17 @@ Feature: Adding Employee to the HRMS application
     When user clicks on PIM option
     And user clicks on add employee button
     And user clicks on save button
-    Then employee was added successfully
 
 
     @addEmpWithoutIDProviding
   Scenario: Add employee without providing an employee ID
       And user enters firstName and middleName and lastName
+      Then employee was added successfully
 
     @addEmpWithIDProviding
   Scenario: Add employee by providing a unique employee ID
      When user enters firstName and middleName and lastName and employeeID
+      Then employee was added successfully
 
     | firstName | middleName | lastName | employeeID |
     | Dexter    | David      | Morgan   | 54354345   |
@@ -27,7 +28,9 @@ Feature: Adding Employee to the HRMS application
       Examples:
         | firstname | lastname | error    |
         |           | Murphy   | Required |
-        |Shawn      |          | Required |
+        |  Shawn    |          | Required |
+        |           |          | Required |
+
 
 
 
