@@ -1,5 +1,6 @@
 Feature: Admin User Login for HRMS Application
 
+  #Given  user is navigated to HRMS application login page
 
   @login
   Scenario: Admin user with valid credentials logs in successfully
