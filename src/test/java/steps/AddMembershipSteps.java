@@ -45,10 +45,8 @@ public class AddMembershipSteps extends CommonMethods {
     @When("Admin selects Memberships")
     public void admin_selects_memberships() {
         click(addMembershipPage.MembershipOption);
-      // selectFromDropdown("Memberships",addMembershipPage.Membership);
-        //selectFromDropdown(addMembershipPage.Qualifications, "Memberships");
 
-
+        
     }
     @Then("Admin user can add any Memberships")
     public void admin_user_can_add_any_memberships() {
