@@ -1,8 +1,4 @@
 steps\LoginSteps.class
-<<<<<<< HEAD
-=======
-steps\AddMembershipSteps.class
->>>>>>> e198b4a1bc97587a83c6595557ba39caf3b1f001
 utils\Constants.class
 utils\ExcelReader.class
 pages\AddEmployeePage.class
@@ -14,14 +10,10 @@ runners\RunnerClass.class
 utils\CommonMethods.class
 pages\EmployeeSearchPage.class
 runners\FailedRunner.class
-<<<<<<< HEAD
-utils\Log.class
-steps\AddLanguage.class
-=======
 steps\TerminateEmployeeSteps.class
 utils\Log.class
 pages\AddMembershipPage.class
->>>>>>> e198b4a1bc97587a83c6595557ba39caf3b1f001
+steps\AddLanguage.class
 test.class
 steps\Hooks.class
 steps\PageInitializer.class
