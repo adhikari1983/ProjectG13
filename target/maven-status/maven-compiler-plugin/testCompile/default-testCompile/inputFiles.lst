@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\runners\FailedRunner.java
 C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\steps\PageInitializer.java
 C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\utils\ExcelReader.java
@@ -15,3 +16,24 @@ C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\steps\Hook
 C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\utils\ConfigReader.java
 C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\pages\LoginPage.java
 C:\Users\waels\OneDrive\Desktop\GroupProject\Group13B16\src\test\java\utils\CommonMethods.java
+=======
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\test.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\pages\AddEmployeePage.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\runners\FailedRunner.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\utils\Constants.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\runners\RegressionRunner.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\utils\ConfigReader.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\utils\Log.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\utils\CommonMethods.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\pages\LoginPage.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\runners\RunnerClass.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\steps\LoginSteps.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\steps\AddMembershipSteps.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\utils\ExcelReader.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\pages\EmployeeSearchPage.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\steps\PageInitializer.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\steps\TerminateEmployeeSteps.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\steps\Hooks.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\pages\AddMembershipPage.java
+C:\Users\lizco\OneDrive\Desktop\LizBranch\Group13B16\src\test\java\pages\DashboardPage.java
+>>>>>>> e198b4a1bc97587a83c6595557ba39caf3b1f001

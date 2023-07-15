@@ -28,7 +28,7 @@ public class AddLanguage {
     }
     @When("user enters the language name and clicks on save")
     public void user_enters_the_language_name_and_clicks_on_save() {
-        sendText("Egyptian", dashboardPage.languageName);
+        sendText("Chinese", dashboardPage.languageName);
         click(dashboardPage.saveBtn);
     }
     @Then("user is successfully add the language")
