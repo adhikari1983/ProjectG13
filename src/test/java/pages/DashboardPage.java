@@ -14,10 +14,26 @@ public class DashboardPage extends CommonMethods {
 
     @FindBy(id="menu_pim_addEmployee")
     public WebElement addEmployeeButton;
+
+    @FindBy(id="menu_admin_viewAdminModule")
+    public WebElement adminButton;
+
+    @FindBy(id="menu_admin_Qualifications")
+    public WebElement qualificationsButton;
+    @FindBy(id="menu_admin_viewLanguages")
+    public WebElement languageButton;
+    @FindBy(id="btnAdd")
+    public WebElement addButton;
+    @FindBy(name="language[name]")
+    public WebElement languageName;
+    @FindBy(name="btnSave")
+    public WebElement saveBtn;
+
     @FindBy(xpath = "//a[text()='Welcome Admin']")
     public WebElement WelcomeMsg;
     @FindBy(id="menu_admin_viewAdminModule")
     public WebElement viewAdminOption;
+
 
     public DashboardPage(){
         PageFactory.initElements(driver,this);

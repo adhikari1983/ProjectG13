@@ -46,7 +46,7 @@ public class AddMembershipSteps extends CommonMethods {
     public void admin_selects_memberships() {
         click(addMembershipPage.MembershipOption);
 
-        
+
     }
     @Then("Admin user can add any Memberships")
     public void admin_user_can_add_any_memberships() {

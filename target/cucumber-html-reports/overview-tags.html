@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@membership", ] ,
+        labels:  [ "@editEmployee",  "@regression",  "@smoke", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00, ] 
+                data:  [ 100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>GroupProjectB16</td>
         <td>1</td>
-      <td>14 Jul 2023, 19:56</td>
+      <td>14 Jul 2023, 22:27</td>
     </tr>
   </tbody>
 </table>
@@ -197,7 +197,7 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_1766471701.html">@membership</a></td>
+        <td class="tagname"><a href="report-tag_4283215639.html">@editEmployee</a></td>
 
         <td      class="passed"    >7</td>
         <td >0</td>
@@ -210,7 +210,41 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="14958137700">14.958</td>
+        <td class="duration" data-value="16815540700">16.815</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_233058432.html">@regression</a></td>
+
+        <td      class="passed"    >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="16815540700">16.815</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_4089311534.html">@smoke</a></td>
+
+        <td      class="passed"    >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="16815540700">16.815</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -218,19 +252,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>7</td>
+      <td>21</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
+      <td>21</td>
 
-      <td>1</td>
+      <td>3</td>
       <td>0</td>
-      <td>1</td>
+      <td>3</td>
 
-      <td class="duration">14.958</td>
-      <td>1</td>
+      <td class="duration">50.446</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>
