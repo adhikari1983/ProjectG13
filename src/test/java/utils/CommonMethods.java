@@ -11,12 +11,12 @@ import steps.PageInitializer;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Driver;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
-import static steps.PageInitializer.initializePageObjects;
 
 public class CommonMethods extends PageInitializer {
     public static WebDriver driver;
@@ -61,7 +61,7 @@ public class CommonMethods extends PageInitializer {
     }
 
     public static void click(WebElement element){
-        waitForClickability(element);
+        //waitForClickability(element);
         element.click();
     }
 
