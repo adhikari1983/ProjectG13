@@ -63,7 +63,7 @@ public class CommonMethods {
     }
 
     public static void click(WebElement element){
-        waitForClickability(element);
+        //waitForClickability(element);
         element.click();
     }
 
