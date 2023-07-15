@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import utils.CommonMethods;
 import java.util.Map;
 import java.util.List;
@@ -66,5 +67,20 @@ public class AddEmployeeSteps extends CommonMethods {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @When("user enters {string} and {string} and verify {string}")
+    public void user_enters_and_and_verify
+            (String firstname, String lastname, String errorMessageExpected) {
+
+       sendText(firstname,addEmployeePage.firstNameField);
+       sendText(lastname,addEmployeePage.lastNameField);
+       click(addEmployeePage.saveButton);
+
+      //getting the error message from web element
+        String errorMessageActual=addEmployeePage.errorTextFieldBox.getText();
+
+        //to compare error message from feature file and web element
+        Assert.assertEquals("please fill the required fields",errorMessageExpected,errorMessageActual);
     }
 }
