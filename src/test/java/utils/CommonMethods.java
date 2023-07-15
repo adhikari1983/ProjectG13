@@ -1,25 +1,24 @@
 package utils;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.PageInitializer;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Driver;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 
-import static steps.PageInitializer.initializePageObjects;
 
-public class CommonMethods {
+public class CommonMethods extends PageInitializer {
     public static WebDriver driver;
 
     public static void openBrowserAndNavigateToURL() {
@@ -62,7 +61,7 @@ public class CommonMethods {
     }
 
     public static void click(WebElement element){
-        waitForClickability(element);
+        //waitForClickability(element);
         element.click();
     }
 
@@ -80,6 +79,18 @@ public class CommonMethods {
         Select sel = new Select(dropDown);
         sel.selectByIndex(index);
     }
+
+    //selection option for radio button
+    public static void selectRadioButtonByValue(String value, List<WebElement> radioButtons) {
+        for (WebElement radioButton : radioButtons) {
+            WebElement labelElement = radioButton.findElement(By.xpath("./following-sibling::label"));
+            if (labelElement.getText().equalsIgnoreCase(value)) {
+                click(radioButton);
+                break;
+            }
+        }
+    }
+
     // to take screen-shots and store
     public static byte[] takeScreenshot(String fileName){
         TakesScreenshot ts = (TakesScreenshot) driver;

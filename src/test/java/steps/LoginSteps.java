@@ -6,11 +6,8 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import utils.CommonMethods;
 import utils.ConfigReader;
-
-import static steps.PageInitializer.loginPage;
 
 public class LoginSteps extends CommonMethods {
 
@@ -23,7 +20,7 @@ public class LoginSteps extends CommonMethods {
     @When("user enter valid admin credentials")
     public void user_enter_valid_admin_credentials() {
 
-        sendText(ConfigReader.getPropertyValue("username"),loginPage.usernameField);
+        sendText(ConfigReader.getPropertyValue("username"), loginPage.usernameField);
         sendText(ConfigReader.getPropertyValue("password"), loginPage.passwordField);
     }
 
