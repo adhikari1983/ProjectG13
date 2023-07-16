@@ -2,24 +2,16 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.log4j.xml.DOMConfigurator;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
-import utils.Log;
 
-import java.util.Map;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import static steps.PageInitializer.addEmployeePage;
-import static steps.PageInitializer.dashboardPage;
+import java.util.Map;
 
 public class AddEmployeeSteps extends CommonMethods {
     @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
-       click(dashboardPage.pimOption);
+        click(dashboardPage.pimOption);
     }
     @When("user clicks on add employee button")
     public void user_clicks_on_add_employee_button() {
@@ -54,7 +46,7 @@ public class AddEmployeeSteps extends CommonMethods {
             String lastNameValue= employee.get("lastName");
             String employeeIDValue=employee.get("employeeID");
 
-           //to fill the fields
+            //to fill the fields
             sendText(firstNameValue,addEmployeePage.firstNameField);
             sendText(middleNameValue,addEmployeePage.middleNameField);
             sendText(lastNameValue,addEmployeePage.lastNameField);
@@ -70,9 +62,9 @@ public class AddEmployeeSteps extends CommonMethods {
     public void user_enters_and_and_verify
             (String firstname, String lastname, String errorMessageExpected) {
 
-       sendText(firstname,addEmployeePage.firstNameField);
-       sendText(lastname,addEmployeePage.lastNameField);
-       click(addEmployeePage.saveButton);
+        sendText(firstname,addEmployeePage.firstNameField);
+        sendText(lastname,addEmployeePage.lastNameField);
+        click(addEmployeePage.saveButton);
 
         String errorMessageActual = addEmployeePage.errorTextFieldBox.getText();
         errorMessageExpected = "Required";

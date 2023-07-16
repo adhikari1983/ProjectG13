@@ -8,5 +8,3 @@ Feature: Admin User Login for HRMS Application
     And user click the login button
     Then user should be successfully logged in
 
-    
-
