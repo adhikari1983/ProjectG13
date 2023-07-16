@@ -12,6 +12,7 @@ public class PageInitializer {
     public static AddPersonalDetails addPersonalDetails;
     public static AddMembershipPage addMembershipPage;
     public static EmployeeWorkExperiencePage employeeWorkExperiencePage;
+    public static AddLanguageProficiencyPage addLanguageProficiencyPage;
 
 
     public static void initializePageObjects() {
@@ -22,5 +23,7 @@ public class PageInitializer {
         addPersonalDetails = new AddPersonalDetails();
         addMembershipPage=new AddMembershipPage();
         employeeWorkExperiencePage=new EmployeeWorkExperiencePage();
+        addLanguageProficiencyPage=new AddLanguageProficiencyPage();
+
     }
 }

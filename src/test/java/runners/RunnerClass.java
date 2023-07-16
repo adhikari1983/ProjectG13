@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         //executes the step defs
         dryRun = false,
         //executes the test case of our tag selection
-        tags = "@editEmployee",
+        tags = "@languageProficiency",
         //to avoid irrelevant information from the console for simple output
         monochrome = true,
         //prints all the steps in console, generates report & provides the failed test path
