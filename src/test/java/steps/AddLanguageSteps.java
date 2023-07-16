@@ -2,12 +2,9 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utils.CommonMethods;
 
-import static steps.PageInitializer.dashboardPage;
-import static utils.CommonMethods.click;
-import static utils.CommonMethods.sendText;
-
-public class AddLanguage {
+public class AddLanguageSteps extends CommonMethods {
 
     @When("user clicks on Admin button")
     public void user_clicks_on_admin_button() {
