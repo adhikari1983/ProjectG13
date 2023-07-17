@@ -3,10 +3,7 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.log4j.xml.DOMConfigurator;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.CommonMethods;
@@ -29,7 +26,7 @@ public class AddDependentsSteps extends CommonMethods {
 
     @When("user add name and relationship and pleaseSpecify and dateOfBirth")
     public void user_add_name_and_relationship_and_please_specify_and_date_of_birth
-            (io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+            (io.cucumber.datatable.DataTable dataTable) {
         //| name | relationship | pleaseSpecify | dateOfBirth |
         List<Map<String, String>> dependentInfo = dataTable.asMaps();
 
@@ -46,6 +43,7 @@ public class AddDependentsSteps extends CommonMethods {
             selectFromDropdown(addDependentsPage.relationShipDD, dependentRelationship);
 
             if (addDependentsPage.relationShipDD.getText().equalsIgnoreCase("Other")) {
+                addDependentsPage.nameTextField.click();
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
                 wait.until(ExpectedConditions.visibilityOf(addDependentsPage.specificationField));
                 //Thread.sleep(5000);
@@ -55,13 +53,13 @@ public class AddDependentsSteps extends CommonMethods {
             // sendText(dependentSpecification, addDependentsPage.specificationField);
 
             sendText(dependentDOB, addDependentsPage.dobField);
-            Thread.sleep(2000);
         }
     }
 
     @When("user clicks on the save button of that page")
     public void user_clicks_on_the_save_button_of_that_page() {
         click(addDependentsPage.saveButton);
+        takeScreenshot("dependentInfoSaved");
     }
 
     @Then("user is able to see Successfully Saved message display")
@@ -70,7 +68,7 @@ public class AddDependentsSteps extends CommonMethods {
         String actualMessageDisplay = addDependentsPage.updatedMessage.getText();
         String expectedMessageDisplay = "Successfully Saved";
         Assert.assertEquals(expectedMessageDisplay, actualMessageDisplay);
-        takeScreenshot("dependentInfoSaved");
+
     }
 
     @When("user clicks on the checkbox to select the dependent")
@@ -89,6 +87,19 @@ public class AddDependentsSteps extends CommonMethods {
         String expectedMessageDisplay = "Successfully Deleted";
         Assert.assertEquals(expectedMessageDisplay, actualMessageDisplay);
         takeScreenshot("depententInfoDeleted");
+    }
+
+    @When("user enters {string} and {string} and {string} and {string} for the inputs")
+    public void user_enters_and_and_and_for_the_inputs
+            (String name, String relationship, String pleaseSpecify, String dateOfBirth) throws InterruptedException {
+        //| name | relationship | pleaseSpecify | dateOfBirth |
+        sendText(name, addDependentsPage.nameTextField);
+        selectFromDropdown(addDependentsPage.relationShipDD, relationship);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(addDependentsPage.specificationField));
+        sendText(pleaseSpecify, addDependentsPage.specificationField);
+        sendText(dateOfBirth, addDependentsPage.dobField);
+       Thread.sleep(5000);
     }
 
 }
