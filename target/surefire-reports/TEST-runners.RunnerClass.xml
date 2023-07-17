@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RunnerClass" time="27.22" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RunnerClass" time="63.001" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Users/apple/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/surefire/surefirebooter-20230715225109570_3.jar /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/surefire 2023-07-15T22-51-09_471-jvmRun1 surefire-20230715225109570_1tmp surefire_0-20230715225109570_2tmp"/>
+    <property name="sun.java.command" value="/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/surefire/surefirebooter-20230716194253990_3.jar /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/surefire 2023-07-16T19-42-53_904-jvmRun1 surefire-20230716194253990_1tmp surefire_0-20230716194253990_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/test-classes:/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/classes:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/apple/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/apple/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/apple/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/apple/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/apple/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/apple/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/apple/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/apple/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/apple/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/apple/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/apple/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/apple/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/apple/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/apple/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/apple/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/apple/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/apple/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/apple/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/apple/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/apple/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/apple/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/apple/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/apple/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/apple/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/apple/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/apple/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/apple/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/apple/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-java/7.11.2/cucumber-java-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-core/7.11.2/cucumber-core-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-gherkin/7.11.2/cucumber-gherkin-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.11.2/cucumber-gherkin-messages-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/gherkin/26.0.3/gherkin-26.0.3.jar:/Users/apple/.m2/repository/io/cucumber/messages/21.0.1/messages-21.0.1.jar:/Users/apple/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/apple/.m2/repository/io/cucumber/datatable/7.11.2/datatable-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-plugin/7.11.2/cucumber-plugin-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/docstring/7.11.2/docstring-7.11.2.jar:/Users/apple/.m2/repository/io/cucumber/html-formatter/20.2.1/html-formatter-20.2.1.jar:/Users/apple/.m2/repository/io/cucumber/junit-xml-formatter/0.1.0/junit-xml-formatter-0.1.0.jar:/Users/apple/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/apple/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/apple/.m2/repository/io/cucumber/cucumber-junit/7.11.0/cucumber-junit-7.11.0.jar:/Users/apple/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/apple/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/apple/.m2/repository/org/apache/poi/poi/5.2.2/poi-5.2.2.jar:/Users/apple/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/apple/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/apple/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/apple/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/apple/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/Users/apple/.m2/repository/org/apache/poi/poi-ooxml/5.2.2/poi-ooxml-5.2.2.jar:/Users/apple/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.2/poi-ooxml-lite-5.2.2.jar:/Users/apple/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/apple/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/apple/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/apple/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/apple/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
@@ -29,14 +29,14 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/surefire/surefirebooter-20230715225109570_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/target/surefire/surefirebooter-20230716194253990_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2+7-FR"/>
     <property name="user.name" value="apple"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="13.3"/>
+    <property name="os.version" value="13.4.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -59,131 +59,124 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="Add employee by providing a unique employee ID" classname="Adding Employee to the HRMS application" time="26.385">
-    <error message="Step [user enters firstName and middleName and lastName and employeeID] is defined with 1 parameters at &apos;steps.AddEmployeeSteps.user_enters_first_name_and_middle_name_and_last_name_and_employee_id(io.cucumber.datatable.DataTable)&apos;.&#10;However, the gherkin step has 0 arguments.&#10;Step text: user enters firstName and middleName and lastName and employeeID" type="io.cucumber.core.exception.CucumberException"><![CDATA[io.cucumber.core.exception.CucumberException: 
-Step [user enters firstName and middleName and lastName and employeeID] is defined with 1 parameters at 'steps.AddEmployeeSteps.user_enters_first_name_and_middle_name_and_last_name_and_employee_id(io.cucumber.datatable.DataTable)'.
-However, the gherkin step has 0 arguments.
-Step text: user enters firstName and middleName and lastName and employeeID
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></error>
+  <testcase name="Invalid User Login #1" classname="Admin User Login for HRMS Application" time="12.041">
     <system-out><![CDATA[
-@addEmpWithIDProviding
-Scenario: Add employee by providing a unique employee ID                # src/test/resources/features/AddEmployee.feature:17
-  Given user enter valid admin credentials                              # steps.LoginSteps.user_enter_valid_admin_credentials()
-  And user click the login button                                       # steps.LoginSteps.user_click_the_login_button()
-  Then user should be successfully logged in                            # steps.LoginSteps.user_should_be_successfully_logged_in()
-  When user clicks on PIM option                                        # steps.AddEmployeeSteps.user_clicks_on_pim_option()
-  And user clicks on add employee button                                # steps.AddEmployeeSteps.user_clicks_on_add_employee_button()
-  And user clicks on save button                                        # steps.AddEmployeeSteps.user_clicks_on_save_button()
-  When user enters firstName and middleName and lastName and employeeID # steps.AddEmployeeSteps.user_enters_first_name_and_middle_name_and_last_name_and_employee_id(io.cucumber.datatable.DataTable)
-      io.cucumber.core.exception.CucumberException: Step [user enters firstName and middleName and lastName and employeeID] is defined with 1 parameters at 'steps.AddEmployeeSteps.user_enters_first_name_and_middle_name_and_last_name_and_employee_id(io.cucumber.datatable.DataTable)'.
-However, the gherkin step has 0 arguments.
-Step text: user enters firstName and middleName and lastName and employeeID
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+@invalidUserLogin
+Scenario Outline: Invalid User Login                                           # src/test/resources/features/Login.feature:18
+  When user enters "admin" and "wwwwwwww" and verify the "Invalid credentials" # steps.LoginSteps.user_enters_and_and_verify_the(java.lang.String,java.lang.String,java.lang.String)
+  Then user clicks on login button                                             # steps.LoginSteps.user_clicks_on_login_button()
+  And error message is displayed                                               # steps.LoginSteps.error_message_is_displayed()
 
-  Then employee was added successfully                                  # steps.AddEmployeeSteps.employee_was_added_successfully()
-    | firstName | middleName | lastName | employeeID |
-    | Dexter    | David      | Morgan   | 2343455698 |
-    | Debora    | Maria      | Morgan   | 1879768687 |
-
-    Embedding Add employee by providing a unique employee ID [image/png 168953 bytes]
+    Embedding Invalid User Login [image/png 254029 bytes]
 
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 47479
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 10623
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 15, 2023 10:51:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 16, 2023 7:43:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 111
+log4j:WARN No appenders could be found for logger (utils.Log).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+  </testcase>
+  <testcase name="Invalid User Login #2" classname="Admin User Login for HRMS Application" time="9.794">
+    <system-out><![CDATA[
+@invalidUserLogin
+Scenario Outline: Invalid User Login                                                 # src/test/resources/features/Login.feature:19
+  When user enters "wwwwwwww" and "Hum@nhrm123" and verify the "Invalid credentials" # steps.LoginSteps.user_enters_and_and_verify_the(java.lang.String,java.lang.String,java.lang.String)
+  Then user clicks on login button                                                   # steps.LoginSteps.user_clicks_on_login_button()
+  And error message is displayed                                                     # steps.LoginSteps.error_message_is_displayed()
+
+    Embedding Invalid User Login [image/png 254029 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 14114
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2023 7:43:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Invalid User Login #3" classname="Admin User Login for HRMS Application" time="9.579">
+    <system-out><![CDATA[
+@invalidUserLogin
+Scenario Outline: Invalid User Login                                              # src/test/resources/features/Login.feature:20
+  When user enters "" and "Hum@nhrm123" and verify the "Username cannot be empty" # steps.LoginSteps.user_enters_and_and_verify_the(java.lang.String,java.lang.String,java.lang.String)
+  Then user clicks on login button                                                # steps.LoginSteps.user_clicks_on_login_button()
+  And error message is displayed                                                  # steps.LoginSteps.error_message_is_displayed()
+
+    Embedding Invalid User Login [image/png 249857 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 48884
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2023 7:43:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Invalid User Login #4" classname="Admin User Login for HRMS Application" time="11.722">
+    <system-out><![CDATA[
+@invalidUserLogin
+Scenario Outline: Invalid User Login                                        # src/test/resources/features/Login.feature:21
+  When user enters "admin" and "" and verify the "Password cannot be empty" # steps.LoginSteps.user_enters_and_and_verify_the(java.lang.String,java.lang.String,java.lang.String)
+  Then user clicks on login button                                          # steps.LoginSteps.user_clicks_on_login_button()
+  And error message is displayed                                            # steps.LoginSteps.error_message_is_displayed()
+
+    Embedding Invalid User Login [image/png 251021 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 16831
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2023 7:43:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Invalid User Login #5" classname="Admin User Login for HRMS Application" time="9.265">
+    <system-out><![CDATA[
+@invalidUserLogin
+Scenario Outline: Invalid User Login                                   # src/test/resources/features/Login.feature:22
+  When user enters "" and "" and verify the "Username cannot be empty" # steps.LoginSteps.user_enters_and_and_verify_the(java.lang.String,java.lang.String,java.lang.String)
+  Then user clicks on login button                                     # steps.LoginSteps.user_clicks_on_login_button()
+  And error message is displayed                                       # steps.LoginSteps.error_message_is_displayed()
+
+    Embedding Invalid User Login [image/png 249174 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 1795
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2023 7:43:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Invalid User Login #6" classname="Admin User Login for HRMS Application" time="9.688">
+    <system-out><![CDATA[
+@invalidUserLogin
+Scenario Outline: Invalid User Login                                                 # src/test/resources/features/Login.feature:23
+  When user enters "djhfgdjh" and "sdjhgfdjhfg" and verify the "Invalid credentials" # steps.LoginSteps.user_enters_and_and_verify_the(java.lang.String,java.lang.String,java.lang.String)
+  Then user clicks on login button                                                   # steps.LoginSteps.user_clicks_on_login_button()
+  And error message is displayed                                                     # steps.LoginSteps.error_message_is_displayed()
+
+    Embedding Invalid User Login [image/png 254029 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 29734
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 16, 2023 7:43:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 111
 ]]></system-err>
   </testcase>

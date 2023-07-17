@@ -3,11 +3,15 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
 import utils.ConfigReader;
+import utils.Log;
+
+import static utils.Log.error;
 
 public class LoginSteps extends CommonMethods {
 
@@ -37,6 +41,26 @@ public class LoginSteps extends CommonMethods {
         boolean isDisplayed = welcomeAdmin.isDisplayed();
         Assert.assertTrue("User should be successfully logged in", isDisplayed);
 
+    }
+
+    @When("user enters {string} and {string} and verify the {string}")
+    public void user_enters_and_and_verify_the
+            (String username, String password, String errorMsgExpected) {
+     sendText(username,loginPage.usernameField);
+     sendText(password,loginPage.passwordField);
+     click(loginPage.loginButton);
+
+     String errorMsgActual=loginPage.errorMessageField.getText();
+     Assert.assertEquals(errorMsgExpected,errorMsgActual);
+    }
+    @Then("user clicks on login button")
+    public void user_clicks_on_login_button() {
+        click(loginPage.loginButton);
+    }
+    @Then("error message is displayed")
+    public void error_message_is_displayed() {
+        String errorMessage="Invalid credential. Please check your username and password and try again";
+        Log.error(errorMessage);
     }
 }
 

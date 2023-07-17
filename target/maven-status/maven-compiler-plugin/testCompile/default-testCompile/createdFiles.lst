@@ -1,14 +1,15 @@
 runners/RegressionRunner.class
 utils/CommonMethods.class
+steps/AddLanguageSteps.class
 pages/EmployeeWorkExperiencePage.class
 steps/PageInitializer.class
 steps/EmployeeSearchSteps.class
-steps/AddLanguage.class
 pages/DashboardPage.class
 steps/Hooks.class
 pages/AddEmployeePage.class
 steps/LoginSteps.class
 steps/EmployeeWorkExperienceSteps.class
+pages/AddLanguageProficiencyPage.class
 runners/FailedRunner.class
 steps/AddEmployeeSteps.class
 runners/RunnerClass.class
@@ -20,6 +21,7 @@ utils/ConfigReader.class
 utils/Constants.class
 utils/ExcelReader.class
 pages/EmployeeSearchPage.class
+steps/AddLanguageProficiencySteps.class
 utils/Log.class
 test.class
 pages/LoginPage.class

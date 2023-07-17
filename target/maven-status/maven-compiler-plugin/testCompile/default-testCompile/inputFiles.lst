@@ -1,4 +1,6 @@
+/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/steps/AddLanguageProficiencySteps.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/utils/CommonMethods.java
+/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/AddLanguageProficiencyPage.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/runners/RunnerClass.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/utils/ExcelReader.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/utils/Log.java
@@ -9,6 +11,7 @@
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/steps/EditPersonalDetailsSteps.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/AddMembershipPage.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/steps/AddMembershipSteps.java
+/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/steps/AddLanguageSteps.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/DashboardPage.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/AddPersonalDetails.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/utils/ConfigReader.java
@@ -22,5 +25,4 @@
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/runners/RegressionRunner.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/EmployeeWorkExperiencePage.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/LoginPage.java
-/Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/steps/AddLanguage.java
 /Users/apple/Desktop/ProjectSyntaxSP/Group13B16/src/test/java/pages/AddEmployeePage.java
