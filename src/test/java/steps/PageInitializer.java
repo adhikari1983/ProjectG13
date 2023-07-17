@@ -15,6 +15,7 @@ public class PageInitializer {
     public static AddLanguageProficiencyPage addLanguageProficiencyPage;
 
     public static JobPage jobPage;
+    public static AddDependentsPage addDependentsPage;
 
 
     public static void initializePageObjects() {
@@ -27,5 +28,6 @@ public class PageInitializer {
         employeeWorkExperiencePage = new EmployeeWorkExperiencePage();
         addLanguageProficiencyPage = new AddLanguageProficiencyPage();
         jobPage = new JobPage();
+        addDependentsPage = new AddDependentsPage();
     }
 }
