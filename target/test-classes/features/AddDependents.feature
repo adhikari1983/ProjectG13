@@ -16,6 +16,7 @@ Feature: Adding the dependents on employee profile
     When user add name and relationship and pleaseSpecify and dateOfBirth
       | name       | relationship | pleaseSpecify | dateOfBirth |
       | April Full | Child        |               | 1985-01-01  |
+     # | Abc Biden  | Other        | Step          | 1987-01-01  |
     And user clicks on the save button of that page
     Then user is able to see Successfully Saved message display
 
