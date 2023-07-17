@@ -13,6 +13,7 @@ Feature: Admin User Login for HRMS Application
       When user enters "<username>" and "<password>" and verify the "<error>"
       Then user clicks on login button
       And error message is displayed
+      Then user can correct the input and attempt to log in again
       Examples:
       | username | password    | error                    |
       | admin    | wwwwwwww    | Invalid credentials      |

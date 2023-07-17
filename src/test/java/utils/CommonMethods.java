@@ -119,6 +119,12 @@ public class CommonMethods extends PageInitializer {
         return sdf.format(date);
     }
 
+    public static void reloadPage() {
+        // Implement the logic to reload the page
+        driver.navigate().refresh();
+    }
+
+
 }
 
 

@@ -49,7 +49,6 @@ public class LoginSteps extends CommonMethods {
      sendText(username,loginPage.usernameField);
      sendText(password,loginPage.passwordField);
      click(loginPage.loginButton);
-
      String errorMsgActual=loginPage.errorMessageField.getText();
      Assert.assertEquals(errorMsgExpected,errorMsgActual);
     }
@@ -61,6 +60,12 @@ public class LoginSteps extends CommonMethods {
     public void error_message_is_displayed() {
         String errorMessage="Invalid credential. Please check your username and password and try again";
         Log.error(errorMessage);
+    }
+    @Then("user can correct the input and attempt to log in again")
+    public void user_can_correct_the_input_and_attempt_to_log_in_again() {
+       loginPage.usernameField.clear();
+       loginPage.passwordField.clear();
+        reloadPage();
     }
 }
 
