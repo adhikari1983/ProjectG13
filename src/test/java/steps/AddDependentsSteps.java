@@ -92,30 +92,3 @@ public class AddDependentsSteps extends CommonMethods {
     }
 
 }
-/*
-if (addDependentsPage.relationShipDD.getText().equalsIgnoreCase("Other")) {
-//                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//                wait.until(ExpectedConditions.textToBePresentInElement(addDependentsPage.specificationField,
-//                        dependentSpecification));
-                Thread.sleep(5000);
-
-
-//                if(!addDependentsPage.specificationField.isEnabled())
-//                {
-//                    System.out.println("Entered  the if condition");
-//                    addDependentsPage.specificationField.click();
-//                    sendText(dependentSpecification, addDependentsPage.specificationField);
-
-                    JavascriptExecutor jse = (JavascriptExecutor)driver;
-                    jse.executeScript("document.getElementById('dependent_relationship').setAttribute('value', dependentSpecification)");
-            sendText(Keys.CONTROL.chars().;
-                //}
-               // }
-
-
-
-
-            }
-            // sendText(dependentSpecification, addDependentsPage.specificationField);
-
- */
