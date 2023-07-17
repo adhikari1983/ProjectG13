@@ -19,8 +19,8 @@ Feature: Adding Employee to the HRMS application
       Then employee was added successfully
 
     | firstName | middleName | lastName | employeeID |
-    | Dexter    | David      | Morgan   | 54354345   |
-    | Debora    | Maria      | Morgan   | 13123313   |
+    | Dexter    | David      | Morgan   | 23434554K |
+    | Debora    | Maria      | Morgan   | 18797686P |
 
     @incompleteEmpInformation
   Scenario Outline: Add incomplete or invalid employee information
