@@ -3,17 +3,12 @@ package steps;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import pages.EmployeeSearchPage;
-import pages.EmployeeWorkExperiencePage;
 import utils.CommonMethods;
 
 import java.util.List;
 import java.util.Map;
 
 public class EmployeeWorkExperienceSteps extends CommonMethods {
-
 
 
     @When("user clicks on Qualifications button")
@@ -28,7 +23,7 @@ public class EmployeeWorkExperienceSteps extends CommonMethods {
     }
 
     @When("user adds Company and Job Title and dates from to and comment and verify it")
-    public void user_adds_company_and_job_title_and_dates_from_to_and_comment_and_verify_it(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+    public void user_adds_company_and_job_title_and_dates_from_to_and_comment_and_verify_it(io.cucumber.datatable.DataTable dataTable) {
         List<Map<String, String>> workExp = dataTable.asMaps();
         for (Map<String, String> addWorkExp : workExp) {
             String companyValue = addWorkExp.get("Company");
@@ -46,7 +41,7 @@ public class EmployeeWorkExperienceSteps extends CommonMethods {
     }
 
     @When("user clicks on save btn")
-    public void user_clicks_on_save_btn()  {
+    public void user_clicks_on_save_btn() {
 
         click(employeeWorkExperiencePage.saveBtn);
         takeScreenshot("savedPic");
@@ -64,7 +59,7 @@ public class EmployeeWorkExperienceSteps extends CommonMethods {
     }
 
     @When("user clicks on Company name")
-    public void user_clicks_on_company_name()  {
+    public void user_clicks_on_company_name() {
 
         click(employeeWorkExperiencePage.companyName);
 
@@ -74,7 +69,7 @@ public class EmployeeWorkExperienceSteps extends CommonMethods {
     @When("user edits Work Experience Page")
     public void user_edits_work_experience_page() {
         click(employeeWorkExperiencePage.comment);
-       sendText("Taught Java and Selenium", employeeWorkExperiencePage.comment);
+        sendText("Taught Java and Selenium", employeeWorkExperiencePage.comment);
 
         click(employeeWorkExperiencePage.saveBtn);
         takeScreenshot("editedPic");
@@ -89,7 +84,7 @@ public class EmployeeWorkExperienceSteps extends CommonMethods {
     }
 
     @When("user clicks on Delete button")
-    public void user_clicks_on_delete_button()  {
+    public void user_clicks_on_delete_button() {
         click(employeeWorkExperiencePage.deleteBtn);
         takeScreenshot("deletedPic");
 

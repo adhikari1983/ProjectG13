@@ -44,8 +44,6 @@ public class EmployeeWorkExperiencePage extends CommonMethods {
     @FindBy(id="delWorkExperience")
     public WebElement deleteBtn;
 
-   // @FindBy(css = "message.success.fadable")
-   // public WebElement successMsg;
 
 
 

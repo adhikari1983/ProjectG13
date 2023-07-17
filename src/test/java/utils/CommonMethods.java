@@ -124,6 +124,13 @@ public class CommonMethods extends PageInitializer {
         driver.navigate().refresh();
     }
 
+    public static void searchEmployeeWait(){
+        //wait for loading to disappear on employee name text box , on employee information page
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        wait.until(ExpectedConditions.invisibilityOf(employeeSearchPage.loadingMsg));
+
+    }
+
 
 }
 
