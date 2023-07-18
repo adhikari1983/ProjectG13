@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
 public class AddMembershipPage extends CommonMethods {
+
     @FindBy(xpath = "//*[@id=\"menu_admin_Qualifications\"]")
     public WebElement Qualifications;
 
@@ -14,6 +15,7 @@ public class AddMembershipPage extends CommonMethods {
 
     @FindBy(id="btnAdd")
     public WebElement AddButton;
+
     @FindBy(id="membership_name")
     public WebElement AddNewMember;
 

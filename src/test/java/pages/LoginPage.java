@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class LoginPage extends CommonMethods {
+
     // this is object repository of POM
     @FindBy(id="txtUsername")
     public WebElement usernameField;

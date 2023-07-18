@@ -19,6 +19,7 @@ public class EmployeeSearchPage extends CommonMethods {
 
     @FindBy(xpath = "//*[@id=\"resultTable\"]/tbody/tr[1]/td[2]/a")
     public WebElement searchResultById;
+
     @FindBy(className = "ac_loading")
     public WebElement loadingMsg;
 

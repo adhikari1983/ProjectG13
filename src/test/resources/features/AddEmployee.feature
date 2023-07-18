@@ -1,4 +1,5 @@
 Feature: Adding Employee to the HRMS application
+
   Background:
     Given user enter valid admin credentials
     And user click the login button
@@ -8,28 +9,28 @@ Feature: Adding Employee to the HRMS application
     And user clicks on save button
 
 
-    @addEmpWithoutIDProviding
+  @addEmpWithoutIDProviding
   Scenario: Add employee without providing an employee ID
-      And user enters firstName and middleName and lastName
-      Then employee was added successfully
+    And user enters firstName and middleName and lastName
+    Then employee was added successfully
 
-    @addEmpWithIDProviding
+  @addEmpWithIDProviding
   Scenario: Add employee by providing a unique employee ID
-     When user enters firstName and middleName and lastName and employeeID
-      Then employee was added successfully
+    When user enters firstName and middleName and lastName and employeeID
+    Then employee was added successfully
 
-    | firstName | middleName | lastName | employeeID |
-    | Dexter    | David      | Morgan   | 23434554K |
-    | Debora    | Maria      | Morgan   | 18797686P |
+      | firstName | middleName | lastName | employeeID |
+      | Dexter    | David      | Morgan   | 23434554K  |
+      | Debora    | Maria      | Morgan   | 18797686P  |
 
-    @incompleteEmpInformation
+  @incompleteEmpInformation
   Scenario Outline: Add incomplete or invalid employee information
-      When user enters "<firstname>" and "<lastname>" and verify "<error>"
-      Examples:
-        | firstname | lastname | error    |
-        |           | Murphy   | Required |
-        |  Shawn    |          | Required |
-        |           |          | Required |
+    When user enters "<firstname>" and "<lastname>" and verify "<error>"
+    Examples:
+      | firstname | lastname | error    |
+      |           | Murphy   | Required |
+      | Shawn     |          | Required |
+      |           |          | Required |
 
 
 
