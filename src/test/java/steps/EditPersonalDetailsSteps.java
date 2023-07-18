@@ -41,7 +41,7 @@ public class EditPersonalDetailsSteps extends CommonMethods {
     }
 
     @When("user clicks on the save button")
-    public void user_clicks_on_the_save_button() throws InterruptedException {
+    public void user_clicks_on_the_save_button() {
         click(addPersonalDetails.saveButton);
 
         //taking screenshot

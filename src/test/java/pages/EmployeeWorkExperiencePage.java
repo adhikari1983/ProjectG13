@@ -45,10 +45,6 @@ public class EmployeeWorkExperiencePage extends CommonMethods {
     public WebElement deleteBtn;
 
 
-
-
-
-
     public EmployeeWorkExperiencePage(){
         PageFactory.initElements(driver, this);
     }

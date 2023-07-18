@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DashboardPage extends CommonMethods {
+
     @FindBy(id="menu_pim_viewPimModule")
     public WebElement pimOption;
 
@@ -20,21 +21,24 @@ public class DashboardPage extends CommonMethods {
 
     @FindBy(id="menu_admin_Qualifications")
     public WebElement qualificationsButton;
+
     @FindBy(id="menu_admin_viewLanguages")
     public WebElement languageButton;
+
     @FindBy(id="btnAdd")
     public WebElement addButton;
+
     @FindBy(name="language[name]")
     public WebElement languageName;
+
     @FindBy(name="btnSave")
     public WebElement saveBtn;
+
     @FindBy(xpath = "//a[text()='Welcome Admin']")
     public WebElement WelcomeMsg;
+
     @FindBy(id="menu_admin_viewAdminModule")
     public WebElement viewAdminOption;
-
-
-
 
     public DashboardPage(){
         PageFactory.initElements(driver,this);

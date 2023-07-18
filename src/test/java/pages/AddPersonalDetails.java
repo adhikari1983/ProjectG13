@@ -8,6 +8,7 @@ import utils.CommonMethods;
 import java.util.List;
 
 public class AddPersonalDetails extends CommonMethods {
+
     @FindBy(id = "personal_txtEmpFirstName")
     public WebElement firstNameField;
 

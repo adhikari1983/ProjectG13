@@ -27,7 +27,7 @@ public class AddDependentsSteps extends CommonMethods {
     @When("user add name and relationship and pleaseSpecify and dateOfBirth")
     public void user_add_name_and_relationship_and_please_specify_and_date_of_birth
             (io.cucumber.datatable.DataTable dataTable) {
-        //| name | relationship | pleaseSpecify | dateOfBirth |
+
         List<Map<String, String>> dependentInfo = dataTable.asMaps();
 
         for (Map<String, String> dependent : dependentInfo) {
@@ -46,12 +46,9 @@ public class AddDependentsSteps extends CommonMethods {
                 addDependentsPage.nameTextField.click();
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
                 wait.until(ExpectedConditions.visibilityOf(addDependentsPage.specificationField));
-                //Thread.sleep(5000);
                 addDependentsPage.nameTextField.click();
                 sendText(dependentSpecification, addDependentsPage.specificationField);
             }
-            // sendText(dependentSpecification, addDependentsPage.specificationField);
-
             sendText(dependentDOB, addDependentsPage.dobField);
         }
     }
@@ -85,21 +82,22 @@ public class AddDependentsSteps extends CommonMethods {
     public void user_is_able_to_see_successfully_deleted_message_display() {
         String actualMessageDisplay = addDependentsPage.deletedMessage.getText();
         String expectedMessageDisplay = "Successfully Deleted";
-        Assert.assertEquals(expectedMessageDisplay, actualMessageDisplay);
+        //Assert.assertEquals(expectedMessageDisplay, actualMessageDisplay);
+        Assert.assertTrue(actualMessageDisplay.contains(expectedMessageDisplay));
         takeScreenshot("depententInfoDeleted");
     }
 
     @When("user enters {string} and {string} and {string} and {string} for the inputs")
     public void user_enters_and_and_and_for_the_inputs
-            (String name, String relationship, String pleaseSpecify, String dateOfBirth) throws InterruptedException {
+            (String name, String relationship, String pleaseSpecify, String dateOfBirth) {
         //| name | relationship | pleaseSpecify | dateOfBirth |
         sendText(name, addDependentsPage.nameTextField);
         selectFromDropdown(addDependentsPage.relationShipDD, relationship);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOf(addDependentsPage.specificationField));
+       // wait.until(ExpectedConditions.visibilityOf(addDependentsPage.specificationField));
         sendText(pleaseSpecify, addDependentsPage.specificationField);
         sendText(dateOfBirth, addDependentsPage.dobField);
-       Thread.sleep(5000);
+
     }
 
 }

@@ -10,17 +10,20 @@ Feature: Adding the dependents on employee profile
     Then user is able to see employee information
     And user clicks on same valid employee id on the listed employee data table
     And user clicks on Dependents button
-    And user clicks on Add button of that page
+
+
   @smoke @regression @addDependent
   Scenario: Search employee by id and add dependents
+    And user clicks on Add button of that page
     When user add name and relationship and pleaseSpecify and dateOfBirth
       | name       | relationship | pleaseSpecify | dateOfBirth |
       | April Full | Child        |               | 1985-01-01  |
     And user clicks on the save button of that page
     Then user is able to see Successfully Saved message display
 
-  @forOther
+  @smoke @regression @forOther
   Scenario Outline: Search employee by id and add dependents with specified Other relationship specified
+    And user clicks on Add button of that page
     When user enters "<name>" and "<relationship>" and "<pleaseSpecify>" and "<dateOfBirth>" for the inputs
     And user clicks on the save button of that page
     Then user is able to see Successfully Saved message display

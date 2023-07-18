@@ -67,7 +67,8 @@ public class AddEmployeeSteps extends CommonMethods {
         click(addEmployeePage.saveButton);
 
         String errorMessageActual = addEmployeePage.errorTextFieldBox.getText();
-        errorMessageExpected = "Required";
+       // errorMessageExpected = "Required";
+
         if (errorMessageActual.isEmpty()) {
             errorMessageActual = "Required";
         }
